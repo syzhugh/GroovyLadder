@@ -1,0 +1,5 @@
+<list count='3'>
+  <lang name='java' feature='static' />
+  <lang name='groovy' feature='dynamic' />
+  <lang name='js' feature='dynamic' />
+</list>

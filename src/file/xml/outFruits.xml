@@ -1,0 +1,4 @@
+<basket count='2'>
+    <fruit type='apple' color='red'/>
+    <fruit type='banana' color='yellow'/>
+</basket>

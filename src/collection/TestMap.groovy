@@ -68,17 +68,17 @@ void testTravelsal() {
             println index + " " + key + " " + value
     }
 }
-/*1 [name:s1, age:10]
-2 [name:s2, age:15]
-3 [name:s3, age:20]
+/*1 [type:s1, age:10]
+2 [type:s2, age:15]
+3 [type:s3, age:20]
 
-0 1 [name:s1, age:10]
-1 2 [name:s2, age:15]
-2 3 [name:s3, age:20]
+0 1 [type:s1, age:10]
+1 2 [type:s2, age:15]
+2 3 [type:s3, age:20]
 
-0 1 [name:s1, age:10]
-1 2 [name:s2, age:15]
-2 3 [name:s3, age:20]*/
+0 1 [type:s1, age:10]
+1 2 [type:s2, age:15]
+2 3 [type:s3, age:20]*/
 
 void testFind() {
     def map = (Map) students
@@ -90,9 +90,9 @@ void testFind() {
     println map.findAll(c1).findAll { it.value.score > 60 }
 }
 /*
-2={name=s2, age=15, score=59}
-[2:[name:s2, age:15, score:59], 3:[name:s3, age:20, score:99]]
-[3:[name:s3, age:20, score:99]]*/
+2={type=s2, age=15, score=59}
+[2:[type:s2, age:15, score:59], 3:[type:s3, age:20, score:99]]
+[3:[type:s3, age:20, score:99]]*/
 
 void testGroup() {
     def map = (LinkedHashMap) students
@@ -100,7 +100,7 @@ void testGroup() {
         return it.value.score > 60 ? '及格' : '不及格';
     }
 }
-/*[及格:[1:[name:s1, age:10, score:99], 3:[name:s3, age:20, score:99]], 不及格:[2:[name:s2, age:15, score:59]]]*/
+/*[及格:[1:[type:s1, age:10, score:99], 3:[type:s3, age:20, score:99]], 不及格:[2:[type:s2, age:15, score:59]]]*/
 
 void testSort() {
     def map = (LinkedHashMap) students
@@ -113,4 +113,4 @@ void testSort() {
     }
 }
 /*
-[2:[name:s2, age:15, score:59], 1:[name:s1, age:10, score:99], 3:[name:s3, age:20, score:99]]*/
+[2:[type:s2, age:15, score:59], 1:[type:s1, age:10, score:99], 3:[type:s3, age:20, score:99]]*/

@@ -10,6 +10,6 @@ class TestGlobal {
         AppManager.init()
         println '程序初始化'
         PersonManager.Person person = PersonManager.createPerson("sun", 24)
-        println "a person - name:${person.getName()} age:${person.getAge()} "
+        println "a person - type:${person.getName()} age:${person.getAge()} "
     }
 }

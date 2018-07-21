@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="gradle-4.4" level="application" />
+    <orderEntry type="library" name="xerces:xercesImpl:2.12.0" level="project" />
   </component>
 </module>
